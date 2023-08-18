@@ -8,7 +8,7 @@ using Microsoft.IdentityModel.JsonWebTokens;
 using MongoDB.Driver;
 using Microsoft.Extensions.Hosting;
 
-namespace auth_service
+namespace notification_service
 {
     public class Program
     {

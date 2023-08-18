@@ -2,7 +2,7 @@ using Application.Dtos;
 using Application.Interface;
 using Microsoft.AspNetCore.Mvc;
 
-namespace auth_service.Controllers
+namespace notification_service.Controllers
 {
     [ApiController]
     [Route("[controller]")]
