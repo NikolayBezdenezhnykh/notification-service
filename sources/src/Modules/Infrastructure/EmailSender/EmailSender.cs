@@ -13,6 +13,7 @@ namespace Infrastructure.EmailSender
         public async Task SendEmailAsync(string to, string from, string subject, string body)
         {
             MailMessage m = new MailMessage(from, to, subject, body);
+            m.IsBodyHtml = true;
             using SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.Credentials = new NetworkCredential("nikolai200290@gmail.com", "huqjnqzfqrisiwfo");
             smtp.EnableSsl = true;

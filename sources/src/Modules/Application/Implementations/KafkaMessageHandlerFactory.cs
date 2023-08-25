@@ -22,6 +22,7 @@ namespace Application.Implementations
             return topic switch
             {
                 "user_registered" => _serviceProvider.GetRequiredService<KafkaMessageNotifyHandler>(),
+                "order_paid" => _serviceProvider.GetRequiredService<KafkaMessageNotifyHandler>(),
                 _ => throw new NotImplementedException(),
             };
         }
